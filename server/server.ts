@@ -1,12 +1,16 @@
-import express from 'express';
+import express from "express";
 import cors from "cors";
-const PORT = 5000;
+
+const port = 5000;
+
 const app = express();
 
+const db = require("./database/index")
 
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-
-
-app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
+app.listen(port, function () {
+  console.log("Listening on port 3000!");
+});
