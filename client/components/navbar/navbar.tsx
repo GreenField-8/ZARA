@@ -51,10 +51,9 @@ const Navbar: React.FC = () => {
         />
       </div>
 
-      <div style={{ marginLeft: '2px', marginTop: '30px', marginRight: '150px' }}>
+      <div style={{ marginLeft: '2px', marginTop: '30px', marginRight: '150px', cursor:"pointer" }}>
         <Box
           className="navbar-search-box"
-          align="left"
           width="100px"
           fontWeight="600"
           fontFamily="neue-helvetica"
@@ -78,7 +77,7 @@ const Navbar: React.FC = () => {
         </Text>
       </div>
 
-      <div style={{ marginRight: '50px', marginTop: '30px' }}onClick={handleCartClick}>
+      <div style={{ marginRight: '50px', marginTop: '30px' , cursor:"pointer" } }onClick={handleCartClick}>
         <Image
           className="navbar-cart-image"
           width="22px"

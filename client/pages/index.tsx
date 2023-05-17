@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Inter } from 'next/font/google';
 import Navbar from '../components/navbar/navbar';
+import Footer from '../components/footer/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Navbar />
+        <Footer />
       </div>
     </>
   );
