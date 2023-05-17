@@ -1,7 +1,7 @@
 export default {
     host: "localhost",
     user: "root",
-    password: "ramnytm11",
+    password: "root",
     database: "zara"
   };
 
