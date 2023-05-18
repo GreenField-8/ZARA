@@ -1,0 +1,23 @@
+.footer-container {
+    height: 400px;
+    margin-top: 100px;
+  }
+  
+  .footer-newsletter {
+    padding-top: 250px;
+    text-decoration: none;
+    font-family: 'Neue Helvetica', sans-serif;
+    margin-left: 642px;
+  }
+  
+  .footer-links {
+    width: 350px;
+    margin: auto;
+    font-family: 'Neue Helvetica', sans-serif;
+  }
+  
+  .footer-link {
+    font-size: 10px;
+    cursor: pointer;
+  }
+  

@@ -1,5 +1,6 @@
 import { Box, Flex, Text } from '@chakra-ui/react';
 import React from 'react';
+import styles from './footer.module.css';
 
 const Footer: React.FC = () => {
   const openInstagram = () => {
@@ -28,29 +29,29 @@ const Footer: React.FC = () => {
 
   return (
     <>
-      <Box height={'400px'}>
-        <Text pt="250px" textDecor="none">
+      <Box className={styles['footer-container']}>
+        <Text className={styles['footer-newsletter']} textDecor="none">
           JOIN OUR NEWSLETTER
         </Text>
       </Box>
-      <Box width="350px" margin="auto">
+      <Box className={styles['footer-links']}>
         <Flex justify="space-between">
-          <Text fontSize="10px" onClick={openInstagram} cursor="pointer">
+          <Text className={styles['footer-link']} onClick={openInstagram}>
             INSTAGRAM
           </Text>
-          <Text fontSize="10px" onClick={openFacebook} cursor="pointer">
+          <Text className={styles['footer-link']} onClick={openFacebook}>
             FACEBOOK
           </Text>
-          <Text fontSize="10px" onClick={openTwitter} cursor="pointer">
+          <Text className={styles['footer-link']} onClick={openTwitter}>
             TWITTER
           </Text>
-          <Text fontSize="10px" onClick={openPinterest} cursor="pointer">
+          <Text className={styles['footer-link']} onClick={openPinterest}>
             PINTEREST
           </Text>
-          <Text fontSize="10px" onClick={openYouTube} cursor="pointer">
+          <Text className={styles['footer-link']} onClick={openYouTube}>
             YOUTUBE
           </Text>
-          <Text fontSize="10px" onClick={openSpotify} cursor="pointer">
+          <Text className={styles['footer-link']} onClick={openSpotify}>
             SPOTIFY
           </Text>
         </Flex>

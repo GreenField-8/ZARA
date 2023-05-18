@@ -1,0 +1,75 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: transparent;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+  z-index: 9999;
+}
+
+.navbar-logo {
+  margin-top: 70px;
+  width: 17%;
+  margin-left: 150px;
+  cursor: pointer;
+}
+
+.navbar-search-box {
+  width: 100px;
+  font-weight: 300;
+  font-family: neue-helvetica;
+  border-bottom: 1px solid black;
+  text-align: right;
+  cursor: pointer;
+  font-family: 'Neue Helvetica', sans-serif;
+  margin-left: 50px;
+}
+
+.navbar-login-text {
+  font-size: 12px;
+  cursor: pointer;
+  font-family: 'Neue Helvetica', sans-serif;
+}
+
+.navbar-login-help {
+  margin-right: 60px;
+}
+
+.navbar-cart-icon {
+  margin-left: 20px;
+}
+.navbar-menu-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  color: #000;
+  font-size: 28px;
+}
+.navbar-offcanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 100vh;
+  background-color: white;
+  z-index: 999;
+  padding: 20px;
+}
+
+.navbar-menu-item {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  font-family: 'Neue Helvetica', sans-serif;
+}
+.navbar-icon {
+  /* Icon styles */
+}
+
+
+
