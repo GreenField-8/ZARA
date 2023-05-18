@@ -1,12 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
 import test from '../public/assets/test.jpg'
+import Navbar from './navbar/navbar';
 
 const PostDetails: React.FC = () => {
+
   const sizes = ['S', 'M', 'L', 'XL'];
  const image = test
   return (
     <div className="post-details">
+        <Navbar />
       <div className="composition-care">
         <h2>COMPOSITION & CARE</h2>
         <p>
