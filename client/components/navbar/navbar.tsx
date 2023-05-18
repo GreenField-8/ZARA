@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Image, Text } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
+import styles from './navbar.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar: React.FC = () => {
   const router = useRouter();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleLogoClick = () => {
     router.push('/');
@@ -14,7 +18,7 @@ const Navbar: React.FC = () => {
   };
 
   const handleSearchClick = () => {
-    router.push('/search');
+    router.push('/components/search');
   };
 
   const handleHelpClick = () => {
@@ -25,59 +29,34 @@ const Navbar: React.FC = () => {
     router.push('/cart');
   };
 
+  const handleMenuClick = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <nav
-      className="navbar"
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        height: '60px',
-        backgroundColor: 'white',
-        boxShadow: '0 0px 0px rgba(0, 0, 0, 0.0)',
-        zIndex: 9999,
-      }}
-    >
+    <nav className={styles.navbar}>
       <div>
         <Image
-          className="navbar-logo"
+          className={styles['navbar-logo']}
           src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg"
           alt="Zara Logo"
-          style={{ marginTop: '100px', width: '22%', marginLeft: '200px', cursor: 'pointer' }}
           onClick={handleLogoClick}
         />
       </div>
 
-      <div style={{ marginLeft: '2px', marginTop: '30px', marginRight: '150px', cursor:"pointer" }}>
-        <Box
-          className="navbar-search-box"
-          width="100px"
-          fontWeight="600"
-          fontFamily="neue-helvetica"
-          borderBottom="1px solid black"
-          style={{ cursor: 'pointer' }}
-          onClick={handleSearchClick}
-        >
-          <Text fontSize="11px">SEARCH</Text>
-        </Box>
+      <div className={styles['navbar-search-box']} onClick={handleSearchClick}>
+        <Text fontSize="11px">SEARCH</Text>
       </div>
 
-      <div style={{ marginRight: '150px', marginTop: '30px', cursor: 'pointer' }} onClick={handleLoginClick}>
-        <Text className="navbar-login-text" fontSize="11px">
-          LOG IN
-        </Text>
+      <div className={styles['navbar-login-text']} onClick={handleLoginClick}>
+        <Text fontSize="12px">LOG IN</Text>
       </div>
 
-      <div style={{ marginRight: '200px', marginTop: '30px', cursor: 'pointer' }} onClick={handleHelpClick}>
-        <Text className="navbar-login-text" fontSize="11px">
-          HELP
-        </Text>
+      <div className={`${styles['navbar-login-text']} ${styles['navbar-login-help']}`} onClick={handleHelpClick}>
+        <Text fontSize="11px">HELP</Text>
       </div>
 
-      <div style={{ marginRight: '50px', marginTop: '30px' , cursor:"pointer" } }onClick={handleCartClick}>
+      <div className={`${styles['navbar-login-text']} ${styles['navbar-cart-icon']}`} onClick={handleCartClick}>
         <Image
           className="navbar-cart-image"
           width="22px"
@@ -86,6 +65,24 @@ const Navbar: React.FC = () => {
           alt="Cart"
         />
       </div>
+
+      <div className={styles['navbar-menu-icon']} onClick={handleMenuClick} >
+        {menuOpen ? (
+          <FontAwesomeIcon icon={faTimes} className={styles['navbar-icon']}/>
+        ) : (
+          <FontAwesomeIcon icon={faBars}  />
+        )}
+      </div>
+
+      {menuOpen && (
+        <div className={styles['navbar-offcanvas']}>
+          <div className={styles['navbar-menu-items']}>
+            <Text className={styles['navbar-menu-item']}>Man</Text>
+            <Text className={styles['navbar-menu-item']}>Woman</Text>
+            <Text className={styles['navbar-menu-item']}>Kids</Text>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
