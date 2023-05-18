@@ -19,14 +19,15 @@
 }
 
 .navbar-search-box {
-  width: 100px;
+  width: 80px;
   font-weight: 300;
   font-family: neue-helvetica;
   border-bottom: 1px solid black;
-  text-align: right;
+  text-align: left;
   cursor: pointer;
   font-family: 'Neue Helvetica', sans-serif;
   margin-left: 50px;
+  height: 23px;
 }
 
 .navbar-login-text {
@@ -36,12 +37,15 @@
 }
 
 .navbar-login-help {
-  margin-right: 60px;
+  margin-right: 80px; /* Adjust the margin-right value to separate the login and help elements */
+  font-family: 'Neue Helvetica', sans-serif;
+
 }
 
 .navbar-cart-icon {
   margin-left: 20px;
 }
+
 .navbar-menu-icon {
   position: absolute;
   top: 10px;
@@ -50,6 +54,7 @@
   color: #000;
   font-size: 28px;
 }
+
 .navbar-offcanvas {
   position: fixed;
   top: 0;
@@ -67,9 +72,3 @@
   cursor: pointer;
   font-family: 'Neue Helvetica', sans-serif;
 }
-.navbar-icon {
-  /* Icon styles */
-}
-
-
-

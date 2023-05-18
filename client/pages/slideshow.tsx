@@ -13,8 +13,8 @@ const Slideshow = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    },5000); 
-  
+    }, 5000);
+
     return () => {
       clearInterval(interval);
     };
@@ -28,14 +28,16 @@ const Slideshow = () => {
           src={imageUrl}
           alt={`Slide ${index + 1}`}
           objectFit="cover"
-          width="100%"
-          height="100%"
+          width="100vw"
+          height="100vh"
           style={{
             position: 'absolute',
             top: 0,
             left: 0,
-            opacity: index === currentIndex ? 1 : 0, 
-            transition: 'opacity 0s ease.5-in-out' 
+            right: 0,
+            bottom: 0,
+            opacity: index === currentIndex ? 1 : 0,
+            transition: 'opacity 0.5s ease-in-out',
           }}
         />
       ))}
