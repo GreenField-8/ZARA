@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
   };
 
   const handleHelpClick = () => {
-    router.push('/help');
+    router.push('/pages/postDetails');
   };
 
   const handleCartClick = () => {
