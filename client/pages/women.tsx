@@ -1,4 +1,4 @@
-import WomenPage from '../components/womanPage/WomenPage';
+import WomenPage from '../components/womenPage/WomenPage'
 
 const women = () => <WomenPage />;
 export default women;
