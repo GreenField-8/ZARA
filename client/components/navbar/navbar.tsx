@@ -28,10 +28,15 @@ const Navbar: React.FC = () => {
   const handleCartClick = () => {
     router.push('/cart');
   };
+  const handleManClick = () => {
+    router.push('/men');
+  };
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
+
+
 
   return (
     <nav className={styles.navbar}>
