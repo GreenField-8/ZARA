@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
   };
 
   const handleLoginClick = () => {
-    router.push('/login');
+    router.push('/Sign_Up');
   };
 
   const handleSearchClick = () => {
