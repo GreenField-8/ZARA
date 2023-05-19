@@ -19,42 +19,51 @@
 }
 
 .navbar-search-box {
-  width: 100px;
+  width: 80px;
   font-weight: 300;
   font-family: neue-helvetica;
   border-bottom: 1px solid black;
-  text-align: right;
+  text-align: left;
   cursor: pointer;
   font-family: 'Neue Helvetica', sans-serif;
-  margin-left: 50px;
+  margin-left: 0px;
+  margin-right: auto; 
+  height: 23px;
 }
+
 
 .navbar-login-text {
   font-size: 12px;
   cursor: pointer;
   font-family: 'Neue Helvetica', sans-serif;
+  margin-right: 20px; 
 }
 
 .navbar-login-help {
-  margin-right: 60px;
+  margin-right: 20px; 
+  font-family: 'Neue Helvetica', sans-serif;
 }
 
 .navbar-cart-icon {
   margin-left: 20px;
 }
+
 .navbar-menu-icon {
   position: absolute;
   top: 10px;
   left: 10px;
   cursor: pointer;
-  color: #000;
-  font-size: 28px;
+  color: #393838;
+  font-size: 20px;
+  margin-top:15px;
+  margin-left: 20px;
 }
+
 .navbar-offcanvas {
   position: fixed;
   top: 0;
   left: 0;
-  width: 500px;
+  width: 300px;
   height: 100vh;
   background-color: white;
   z-index: 999;
@@ -67,9 +76,3 @@
   cursor: pointer;
   font-family: 'Neue Helvetica', sans-serif;
 }
-.navbar-icon {
-  /* Icon styles */
-}
-
-
-

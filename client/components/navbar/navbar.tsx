@@ -18,11 +18,11 @@ const Navbar: React.FC = () => {
   };
 
   const handleSearchClick = () => {
-    router.push('/components/search');
+    router.push('../pages/search');
   };
 
   const handleHelpClick = () => {
-    router.push('/help');
+    router.push('/pages/postDetails');
   };
 
   const handleCartClick = () => {
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
         <Text fontSize="12px">LOG IN</Text>
       </div>
 
-      <div className={`${styles['navbar-login-text']} ${styles['navbar-login-help']}`} onClick={handleHelpClick}>
+      <div className={`${styles['navbar-login-help']} ${styles['navbar-login-help']}`} onClick={handleHelpClick}>
         <Text fontSize="11px">HELP</Text>
       </div>
 
