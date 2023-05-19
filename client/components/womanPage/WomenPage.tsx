@@ -4,7 +4,7 @@ import axios from 'axios';
 
 interface Post {
   id: number;
-  title: string;
+  name: string;
 }
 
 const ProductsByCategory = () => {
@@ -30,7 +30,7 @@ const ProductsByCategory = () => {
       <h1>Posts in category: {category}</h1>
       <ul>
         {posts.map((post) => (
-          <li key={post.id}>{post.title}</li>
+          <li key={post.id}>{post.name}</li>
         ))}
       </ul>
     </div>
