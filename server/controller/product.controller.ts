@@ -50,5 +50,19 @@ export const getProductsByCategory = async (req: Request, res: Response) => {
       res.status(500).send('Error retrieving products');
     }
   };
+  export const getProductsByName = async (req: Request, res: Response) => {
+    try {
+      const products = await getRepository(Product).find({ where: { name: req.params.name } });
+
+      if (products.length > 0) {
+        res.send(products);
+      } else {
+        res.status(404).send('No products found with the specified name');
+      }
+    } catch (error) {
+      console.error('Error retrieving products:', error); 
+      res.status(500).send('Error retrieving products');
+    }
+  };
   
   

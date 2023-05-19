@@ -18,20 +18,25 @@ const Navbar: React.FC = () => {
   };
 
   const handleSearchClick = () => {
-    router.push('../pages/search');
+    router.push('/searchPage');
   };
 
   const handleHelpClick = () => {
-    router.push('/pages/postDetails');
+    router.push('/postDetailsPage');
   };
 
   const handleCartClick = () => {
     router.push('/cart');
   };
+  const handleManClick = () => {
+    router.push('/men');
+  };
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
+
+
 
   return (
     <nav className={styles.navbar}>
