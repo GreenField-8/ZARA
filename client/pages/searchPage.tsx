@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from '@/components/navbar/navbar';
+import Link from 'next/link';
 
 const SearchPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -49,16 +50,17 @@ const SearchPage = () => {
       </div>
       <div>
         {searchResults.map((product) => (
-            <div key={product.id}>
-            <img
-              src={product.image}
-              alt="Product Image"
-              style={{ width: '232px', height: '348px', aspectRatio: '2/3' }}
-            />
-            <p className="product-name">{product.name}</p>
-            <p className="product-price">{product.price} TND</p>
+          <div key={product.id}>
+            <Link href={`/postDetailsPage?id=${product.id}&name=${encodeURIComponent(product.name)}&price=${product.price}&image=${encodeURIComponent(product.image)}&description=${encodeURIComponent(product.description)}`}>
+                <img
+                  src={product.image}
+                  alt="Product Image"
+                  style={{ width: '232px', height: '348px', aspectRatio: '2/3' }}
+                />
+                <p className="product-name">{product.name}</p>
+                <p className="product-price">{product.price} TND</p>
+            </Link>
           </div>
-
         ))}
       </div>
     </div>
@@ -72,4 +74,5 @@ interface Product {
   name: string;
   image: string;
   price: number;
+  description:string
 }
