@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useRouter } from 'next/router';
 
 interface SignUpProps {
   onSwitchForm: () => void;
@@ -9,6 +10,7 @@ const Sign_Up: React.FC<SignUpProps> = ({ onSwitchForm }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const router = useRouter();
 
   const handleRegister = async () => {
     try {
@@ -23,6 +25,10 @@ const Sign_Up: React.FC<SignUpProps> = ({ onSwitchForm }) => {
       console.error(error.response.data);
       // Handle error
     }
+  };
+
+  const handleSignupClick = () => {
+    router.push('/Login');
   };
 
   return (
@@ -49,7 +55,7 @@ const Sign_Up: React.FC<SignUpProps> = ({ onSwitchForm }) => {
       <button onClick={handleRegister}>Register</button>
       <p>
         Already have an account?{' '}
-        <button onClick={onSwitchForm}>Switch to Login</button>
+        <button onClick={handleSignupClick}>Switch to Login</button>
       </p>
     </div>
   );
