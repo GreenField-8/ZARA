@@ -37,16 +37,18 @@ export const getProductById = async (req: Request, res: Response) => {
     }
 };
 
-export const getProductByCategory = async (req: Request, res: Response) => {
+export const getProductsByCategory = async (req: Request, res: Response) => {
     try {
-        const product = await getRepository(Product).findOne({where: {category: parseInt(req.params.category, 10)}});
-    
-        if (product) {
-            res.send(product);
-        } else {
-            res.status(404).send('Product not found');
-        }
-        } catch (error) {
-        res.status(500).send('Error retrieving product');
-        }
-};
+      const products = await getRepository(Product).find({ where: { category: req.params.category} });
+  
+      if (products.length > 0) {
+        res.send(products);
+      } else {
+        res.status(404).send('No products found in the specified category');
+      }
+    } catch (error) {
+      res.status(500).send('Error retrieving products');
+    }
+  };
+  
+  
