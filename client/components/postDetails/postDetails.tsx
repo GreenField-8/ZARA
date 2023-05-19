@@ -1,15 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
-import test from '../../public/assets/test.jpg'
+import { useRouter } from 'next/router';
 import Navbar from '../navbar/navbar';
 
 const PostDetails: React.FC = () => {
-
+  const router = useRouter();
   const sizes = ['S', 'M', 'L', 'XL'];
- const image = test
+  const { id, name, price, image, description } = router.query;
+  const productImage = typeof image === 'string' ? image : '';
+
   return (
     <div className="post-details">
-        <Navbar />
+      <Navbar />
       <div className="composition-care">
         <h2>COMPOSITION & CARE</h2>
         <p>
@@ -23,18 +25,13 @@ const PostDetails: React.FC = () => {
       </div>
 
       <div className="image-container">
-        <Image
-          src={image}
-          alt="Product Image"
-          width={300}
-          height={400}
-        />
+        <Image src={productImage} alt="Product Image" width={300} height={400} />
       </div>
 
       <div className="product-details">
-        <h2>Title</h2>
-        <p>Price: $19.99</p>
-        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2>{name}</h2>
+        <p> {price} TND</p>
+        <p>Description: {description}</p>
         <ul>
           {sizes.map((size) => (
             <li key={size}>{size}</li>
@@ -52,6 +49,8 @@ const PostDetails: React.FC = () => {
           font-size: 11px;
           letter-spacing: 0.4px;
           font-weight: 300;
+          margin-top:150px;
+          margin-left:50px
         }
 
         .composition-care {

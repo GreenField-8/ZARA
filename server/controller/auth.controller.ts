@@ -46,12 +46,12 @@ export const Login = async (req: Request, res: Response) => {
 
     res.cookie('accessToken', accessToken, {
         httpOnly: true,
-        maxAge: 24 * 60 * 60 * 1000 //equivalent to 1 day
+        maxAge: 24 * 60 * 60 * 1000 
     });
 
     res.cookie('refreshToken', refreshToken, {
         httpOnly: true,
-        maxAge: 7 * 24 * 60 * 60 * 1000 //equivalent to 7 days
+        maxAge: 7 * 24 * 60 * 60 * 1000 
     })
 
     res.send({
