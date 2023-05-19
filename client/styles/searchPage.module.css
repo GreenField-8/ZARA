@@ -1,0 +1,13 @@
+
+.product-name {
+  font-size: 12px;
+  font-family: "Neue Helvetica", Arial, sans-serif;
+  margin-top: 0px;
+}
+
+.product-price {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0px;
+  font-family: "Neue Helvetica", Arial, sans-serif;
+}
