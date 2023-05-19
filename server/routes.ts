@@ -1,6 +1,6 @@
 import express, { Router } from "express";
 import { AuthenticatedUser, Login, Logout, Refresh, Register } from "./controller/auth.controller";
-import { createProduct, getAllProducts, getProductById, getProductByCategory , getProductByName } from './controller/product.controller'
+import { createProduct, getAllProducts, getProductById, getProductsByCategory , getProductsByName } from './controller/product.controller'
 
 
  const router: Router = express.Router()
@@ -12,8 +12,10 @@ import { createProduct, getAllProducts, getProductById, getProductByCategory , g
     router.post('/addProd', createProduct)
     router.get('/prod', getAllProducts)
     router.get('/prod/:id', getProductById)
-    router.get('/prod/category/:category', getProductByCategory)
-    router.get('/prod/name/:name', getProductByName)
+    router.get('/prodCategory/:category', getProductsByCategory)
+    router.get('/prodName/:name', getProductsByName)
+    
+
 
 
 export default router

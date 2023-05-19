@@ -37,32 +37,32 @@ export const getProductById = async (req: Request, res: Response) => {
     }
 };
 
-export const getProductByCategory = async (req: Request, res: Response) => {
+export const getProductsByCategory = async (req: Request, res: Response) => {
     try {
-        const product = await getRepository(Product).findOne({where: {category:req.body.category}});
-    
-        if (product) {
-            res.send(product);
-        } else {
-            res.status(404).send('Product not found');
-        }
-        } catch (error) {
-        res.status(500).send('Error retrieving product');
-        }
-};
-
-export const getProductByName = async (req: Request, res: Response) => {
-    try {
-      const product = await getRepository(Product).findOne({ where: { name: req.body.name } });
+      const products = await getRepository(Product).find({ where: { category: req.params.category} });
   
-      if (product) {
-        res.send(product);
+      if (products.length > 0) {
+        res.send(products);
       } else {
-        res.status(404).send('Product not found');
+        res.status(404).send('No products found in the specified category');
       }
     } catch (error) {
-      res.status(500).send('Error retrieving product');
+      res.status(500).send('Error retrieving products');
+    }
+  };
+  export const getProductsByName = async (req: Request, res: Response) => {
+    try {
+      const products = await getRepository(Product).find({ where: { name: req.params.name } });
+
+      if (products.length > 0) {
+        res.send(products);
+      } else {
+        res.status(404).send('No products found with the specified name');
+      }
+    } catch (error) {
+      console.error('Error retrieving products:', error); 
+      res.status(500).send('Error retrieving products');
     }
   };
   
-
+  
