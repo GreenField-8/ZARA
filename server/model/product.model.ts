@@ -12,7 +12,7 @@ export class Product {
     image!: string;
 
     @Column()
-    category!: number;
+    category!: string;
 
     @Column() 
     price!: string;
