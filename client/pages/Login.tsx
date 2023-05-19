@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useRouter } from 'next/router';
+import  { useRouter }  from 'next/router';
 
 interface LoginProps {
   onSwitchForm: () => void;
@@ -26,8 +26,7 @@ const Login: React.FC<LoginProps> = ({ onSwitchForm }) => {
   };
 
   const handleLoginClick = () => {
-    router.push('/Sign_Up');
-    console.log('aaa');
+    router.push('/signup');
     
   };
 
