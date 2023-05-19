@@ -1,89 +1,40 @@
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import Navbar from '../navbar/navbar';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
-interface Product {
-  id: string;
-  name: string;
-  price: number;
-  image: string;
+interface Post {
+  id: number;
+  title: string;
 }
 
-const WomenPage: React.FC = () => {
-  const [products, setProducts] = useState<Product[]>([]);
+const ProductsByCategory = () => {
+  const router = useRouter();
+  const category = "women";
+  const [posts, setPosts] = useState<Post[]>([]);
 
   useEffect(() => {
-    const fetchProducts = async () => {
+    const fetchPosts = async () => {
       try {
-        const response = await fetch('/api/products'); // Replace with your API endpoint or database query
-
-        if (response.ok) {
-          const data = await response.json();
-          setProducts(data.products); // Update the products array with the fetched data
-        } else {
-          console.error('Failed to fetch product data');
-        }
+        const response = await axios.get('http://localhost:7000/api/prodCategory/women');
+        setPosts(response.data);
       } catch (error) {
-        console.error('Error fetching product data:', error);
+        console.error('Error fetching posts:', error);
       }
     };
 
-    fetchProducts();
+    fetchPosts();
   }, []);
 
   return (
     <div>
-      <Navbar />
-      <div>
-        {/* Display the input for filtering options */}
-        <input type="text" placeholder="Search" />
-      </div>
-      <div>
-        {/* Display the products */}
-        {products.map((product) => (
-          <div key={product.id}>
-            {/* Display the product image */}
-            <Image src={product.image} alt={product.name} width={300} height={200} />
-            {/* Display the product price */}
-            <p>{product.price}</p>
-            {/* Display the product name */}
-            <p>{product.name}</p>
-            {/* Display the "Add to Cart" button */}
-            <Link href={`/product/${product.id}`}>
-              <span>Add to Cart</span>
-            </Link>
-          </div>
+      <h1>Posts in category: {category}</h1>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}>{post.title}</li>
         ))}
-      </div>
-      <style jsx>{`
-        .Main_women_tri {
-          width: 90vw;
-          /* border: 1px solid blue; */
-          margin: auto;
-          margin-top: 3%;
-        }
-
-        .render_data_women {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 20px;
-          /* border: 1px solid red; */
-          width: 100%;
-          margin: auto;
-        }
-
-        .women_image {
-          width: 100%;
-        }
-
-        .span_div {
-          display: flex;
-          justify-content: space-around;
-        }
-      `}</style>
+      </ul>
     </div>
   );
 };
 
-export default WomenPage;
+export default ProductsByCategory;
