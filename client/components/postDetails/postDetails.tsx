@@ -49,6 +49,8 @@ const PostDetails: React.FC = () => {
           font-size: 11px;
           letter-spacing: 0.4px;
           font-weight: 300;
+          margin-top:150px;
+          margin-left:50px
         }
 
         .composition-care {
