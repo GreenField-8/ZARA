@@ -82,7 +82,6 @@ const Navbar: React.FC = () => {
       {menuOpen && (
         <div className={styles['navbar-offcanvas']}>
           <div className={styles['navbar-menu-items']}>
-            <Text className={styles['navbar-menu-item']}>Man</Text>
             <Text className={styles['navbar-menu-item']}>Woman</Text>
             <Text className={styles['navbar-menu-item']}>Kids</Text>
           </div>
