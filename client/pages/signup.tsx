@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const Sign_up: React.FC = () => {
+interface SignUpProps {
+  onSwitchForm: () => void;
+}
+
+const Sign_Up: React.FC<SignUpProps> = ({ onSwitchForm }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post('http:localhost:7000/api/register', {
+      const response = await axios.post('http://localhost:7000/api/register', {
         name,
         email,
         password,
@@ -43,8 +47,12 @@ const Sign_up: React.FC = () => {
         onChange={(e) => setPassword(e.target.value)}
       />
       <button onClick={handleRegister}>Register</button>
+      <p>
+        Already have an account?{' '}
+        <button onClick={onSwitchForm}>Switch to Login</button>
+      </p>
     </div>
   );
 };
 
-export default Sign_up;
+export default Sign_Up;
