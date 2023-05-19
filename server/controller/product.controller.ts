@@ -39,7 +39,7 @@ export const getProductById = async (req: Request, res: Response) => {
 
 export const getProductByCategory = async (req: Request, res: Response) => {
     try {
-        const product = await getRepository(Product).findOne({where: {category: parseInt(req.params.category, 10)}});
+        const product = await getRepository(Product).findOne({where: {category:req.body.category}});
     
         if (product) {
             res.send(product);
@@ -50,3 +50,19 @@ export const getProductByCategory = async (req: Request, res: Response) => {
         res.status(500).send('Error retrieving product');
         }
 };
+
+export const getProductByName = async (req: Request, res: Response) => {
+    try {
+      const product = await getRepository(Product).findOne({ where: { name: req.body.name } });
+  
+      if (product) {
+        res.send(product);
+      } else {
+        res.status(404).send('Product not found');
+      }
+    } catch (error) {
+      res.status(500).send('Error retrieving product');
+    }
+  };
+  
+
