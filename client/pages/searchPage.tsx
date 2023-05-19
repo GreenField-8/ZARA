@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Navbar from '@/components/navbar/navbar';
 
 const SearchPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -29,7 +30,8 @@ const SearchPage = () => {
 
   return (
     <div>
-      <div style={{ borderBottom: '1px solid #ccc' }}>
+      <Navbar />
+      <div style={{ borderBottom: '1px solid #ccc', marginTop: '150px' }}>
         <input
           type="text"
           style={{
@@ -40,17 +42,23 @@ const SearchPage = () => {
             padding: '8px',
             outline: 'none',
           }}
-          placeholder="Search..."
+          placeholder="Search for an item, colour, collection..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
       </div>
       <div>
         {searchResults.map((product) => (
-          <div key={product.id}>
-            <p>{product.name}</p>
-            <img src={product.image} alt="Product Image" />
+            <div key={product.id}>
+            <img
+              src={product.image}
+              alt="Product Image"
+              style={{ width: '232px', height: '348px', aspectRatio: '2/3' }}
+            />
+            <p className="product-name">{product.name}</p>
+            <p className="product-price">{product.price} TND</p>
           </div>
+
         ))}
       </div>
     </div>
@@ -63,4 +71,5 @@ interface Product {
   id: number;
   name: string;
   image: string;
+  price: number;
 }
