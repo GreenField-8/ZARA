@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import test from '../public/assets/test.jpg'
-import Navbar from './navbar/navbar';
+import test from '../../public/assets/test.jpg'
+import Navbar from '../navbar/navbar';
 
 const PostDetails: React.FC = () => {
 
