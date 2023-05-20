@@ -56,7 +56,7 @@ const ProductsByCategory = () => {
             <img src={post.image} alt={post.name} />
             <div className="post-info">
               <div className="post-name">{post.name}</div>
-              <div className="post-price">${post.price}</div>
+              <div className="post-price">{post.price}TND</div>
             </div>
           </div>
         ))}

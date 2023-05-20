@@ -50,19 +50,48 @@ const SearchPage = () => {
       </div>
       <div>
         {searchResults.map((product) => (
-          <div key={product.id}>
+          <div key={product.id} className="product-container">
             <Link href={`/postDetailsPage?id=${product.id}&name=${encodeURIComponent(product.name)}&price=${product.price}&image=${encodeURIComponent(product.image)}&description=${encodeURIComponent(product.description)}`}>
+              <div>
                 <img
                   src={product.image}
                   alt="Product Image"
                   style={{ width: '232px', height: '348px', aspectRatio: '2/3' }}
                 />
-                <p className="product-name">{product.name}</p>
-                <p className="product-price">{product.price} TND</p>
+                <p className="product-info">
+                  <span className="product-name">{product.name}</span>
+                  <span className="product-price">{product.price} TND</span>
+                </p>
+              </div>
             </Link>
           </div>
         ))}
       </div>
+
+      <style jsx>{`
+        .product-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .product-info {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 10px; /* Adjust the margin value as needed */
+        }
+
+        .product-name {
+          font-family: 'Neue Helvetica', Arial, sans-serif;
+          font-size: 10px;
+          margin-right: 150px;
+        }
+
+        .product-price {
+          font-family: 'Neue Helvetica', Arial, sans-serif;
+          font-size: 10px;
+        }
+      `}</style>
     </div>
   );
 };
@@ -74,5 +103,5 @@ interface Product {
   name: string;
   image: string;
   price: number;
-  description:string
+  description: string;
 }

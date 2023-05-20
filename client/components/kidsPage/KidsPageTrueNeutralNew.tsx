@@ -13,13 +13,13 @@ interface Post {
 
 const ProductsByCategory = () => {
   const router = useRouter();
-  const category = 'kids';
+  const category = 'kids-trueNeutralNew';
   const [posts, setPosts] = useState<Post[]>([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('http://localhost:7000/api/prodCategory/kids');
+        const response = await axios.get('http://localhost:7000/api/prodCategory/kids-trueNeutralNew');
         setPosts(response.data);
       } catch (error) {
         console.error('Error fetching posts:', error);

@@ -1,0 +1,450 @@
+[
+    {
+      
+      "name": "SHIRT DRESS WITH GATHERING",
+      "image": "https://static.zara.net/photos///2022/V/0/1/p/3278/575/251/2/w/314/3278575251_1_1_1.jpg?ts=1651235969303",
+      "category": "women",
+      "price": "1000",
+      "status": 1
+    },
+    {
+      
+      "name": "SHIRT DRESS WITH GATHERING",
+      "image": "https://static.zara.net/photos///2022/V/0/1/p/3278/575/251/2/w/314/3278575251_1_1_1.jpg?ts=1651235969303",
+      "category": "women",
+      "price": "1000",
+      "status": 1
+    },
+    {
+     
+      "name": "VOLUMINOUS GATHERED DRESS",
+      "image": "https://static.zara.net/photos///2022/V/0/1/p/3278/575/251/2/w/314/3278575251_1_1_1.jpg?ts=1651235969303",
+      "category": "women",
+      "price": "4890",
+      "status": 1
+    },
+    {
+  
+      "name": "HAUT UNI ET AJOURÉ",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/2335/601/800/102/w/608/2335601800_15_1_1.jpg?ts=1681455581863",
+      "category": "kids",
+      "price": "19,90 ",
+      "status": 1
+    },
+    {
+   
+      "name": "HAUT CÔTELÉ NAGEUSE",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/3402/607/520/2/w/440/3402607520_6_1_1.jpg?ts=1676480112443",
+      "category": "kids",
+      "price": "25,90 ",
+      "status": 2
+    },
+    {
+   
+      "name": "T-SHIRT UNI",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/1879/600/406/102/w/939/1879600406_15_1_1.jpg?ts=1680260501644",
+      "category": "kids",
+      "price": "19,90 ",
+      "status": 3
+    },
+    {
+    
+      "name": "HAUT À MANCHERONS",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/2335/602/500/102/w/939/2335602500_15_1_1.jpg?ts=1681455578779",
+      "category": "kids",
+      "price": "19,90 ",
+      "status": 4
+    },
+    {
+     
+      "name": "T-SHIRT IMPRIMÉ RAYÉ À MANCHERONS",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/2335/603/105/2/w/307/2335603105_6_1_1.jpg?ts=1679926630584",
+      "category": "kids",
+      "price": "25,90 ",
+      "status": 4
+    },
+    {
+      
+      "name": "T-SHIRT À RAYURES",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/3037/602/642/2/w/440/3037602642_6_1_1.jpg?ts=1669913653266",
+      "category": "kids",
+      "price": "45,90 ",
+      "status": 6
+    },
+    {
+  
+      "name": "BLOUSE EN LIN",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/4786/615/406/2/w/307/4786615406_6_1_1.jpg?ts=1678789148259",
+      "category": "kids",
+      "price": "79,90 ",
+      "status": 6
+    },
+    {
+   
+      "name": "SWEAT PREMIUM",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/0761/438/251/2/w/465/0761438251_1_1_1.jpg?ts=1674060164282",
+      "category": "men",
+      "price": "119,00 ",
+      "status": 106
+    },
+    {
+    
+      "name": "SWEAT À DAMIER SPEED RACER™ © TATSUNOKO PRODUCTION",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/1277/411/250/2/w/529/1277411250_1_1_1.jpg?ts=1682077442110",
+      "category": "men",
+      "price": "179,00 ",
+      "status": 107
+    },
+    {
+    
+      "name": "BLOUSON TECHNIQUE AVEC BLOCS DE COULEUR",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/0706/374/055/23/w/529/0706374055_1_1_1.jpg?ts=1681468198906",
+      "category": "men",
+      "price": "259,00 ",
+      "status": 108
+    },
+    {
+     
+      "name": "BERMUDA TEXTURÉ QUADRILLÉ",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/0722/476/251/2/w/529/0722476251_1_1_1.jpg?ts=1678178210729",
+      "category": "men",
+      "price": "129,00 ",
+      "status": 108
+    },
+    {
+   
+      "name": "SHORT À TEXTURE VELOURS BOUCLÉ",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/0706/311/401/4/w/939/0706311401_2_3_1.jpg?ts=1682592436909",
+      "category": "men",
+      "price": "139,00 ",
+      "status": 108
+    },
+    {
+   
+      "name": "BERMUDA À CARREAUX",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/4840/310/400/2/w/939/4840310400_2_3_1.jpg?ts=1680690927527",
+      "category": "men",
+      "price": "149,00 ",
+      "status": 109
+    },
+    {
+   
+      "name": "SHORT DE BAIN AVEC IMPRIMÉ FLORAL",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/8574/449/442/2/w/939/8574449442_1_1_1.jpg?ts=1680521191264",
+      "category": "men",
+      "price": "119,00 ",
+      "status": 110
+    },
+    {
+     
+      "name": "STRIPED VISCOSE - LINEN SHIRT",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/9939/178/250/2/w/608/9939178250_2_5_1.jpg?ts=1672763198339",
+      "category": "men-linen",
+      "price": "149,00",
+      "status": 111
+    },
+    {
+    
+      "name": "STRIPED TEXTURED SHIRT",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/7545/331/712/2/w/308/7545331712_6_1_1.jpg?ts=1674820250435",
+      "category": "men-linen",
+      "price": "149,00",
+      "status": 112
+    },
+    {
+  
+      "name": "100% LINEN BERMUDA SHORTS",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/8574/445/800/2/w/889/8574445800_1_1_1.jpg?ts=1679051705328",
+      "category": "men-linen",
+      "price": "149,00",
+      "status": 113
+    },
+    {
+     
+      "name": "TEXTURED CROCHET SHIRT",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/1300/413/520/2/w/889/1300413520_6_1_1.jpg?ts=1681902449153",
+      "category": "men-crochet",
+      "price": "179,00 ",
+      "status": 114
+    },
+    {
+    
+      "name": "TEXTURED CROCHET SHIRT",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/7200/420/064/2/w/889/7200420064_6_1_1.jpg?ts=1681384037081",
+      "category": "men-crochet",
+      "price": "199,00 ",
+      "status": 115
+    },
+    {
+     
+      "name": "CROCHET TANK TOP",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/6216/415/800/2/w/889/6216415800_6_1_1.jpg?ts=1681383657475",
+      "category": "men-crochet",
+      "price": "119,00 ",
+      "status": 116
+    },
+    {
+    
+      "name": "CUTWORK EMBROIDERY SHIRT",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/0794/404/700/2/w/939/0794404700_2_1_1.jpg?ts=1678875735415",
+      "category": "men-crochet",
+      "price": "179,00 ",
+      "status": 116
+    },
+    {
+     
+      "name": "STRIPED CROCHET BERMUDA SHORTS",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/5584/413/070/2/w/889/5584413070_6_1_1.jpg?ts=1680598804429",
+      "category": "men-crochet",
+      "price": "129,00 ",
+      "status": 116
+    },
+    {
+  
+      "name": "FITTED DOUBLE-BREASTED BLAZER",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/3736/044/403/2/w/939/3736044403_1_1_1.jpg?ts=1676634001229",
+      "category": "women-blazers",
+      "price": "299,00 ",
+      "status": 117
+    },
+    {
+   
+      "name": "TAILORED BLAZER",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/2238/786/942/2/w/939/2238786942_1_1_1.jpg?ts=1675771031220",
+      "category": "women-blazers",
+      "price": "259,00 ",
+      "status": 117
+    },
+    {
+  
+      "name": "DOUBLE-BREASTED BLAZER",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/2420/761/712/17/w/939/2420761712_2_1_1.jpg?ts=1678280121197",
+      "category": "women-blazers",
+      "price": "259,00 ",
+      "status": 118
+    },
+    {
+    
+      "name": "OVERSIZE LINEN BLEND BLAZER WITH VENTS",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/2010/882/832/17/w/939/2010882832_1_1_1.jpg?ts=1679575207153",
+      "category": "women-blazers",
+      "price": "259,00 ",
+      "status": 119
+    },
+    {
+    
+      "name": "CROPPED TAILORED WAISTCOAT",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/2152/846/819/2/w/939/2152846819_1_1_1.jpg?ts=1675185633485",
+      "category": "women-blazers",
+      "price": "129,00 ",
+      "status": 120
+    },
+    {
+    
+      "name": "SEQUIN BOMBER JACKET",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/3449/975/710/12/w/939/3449975710_2_1_1.jpg?ts=1684492188742",
+      "category": "women-jackets",
+      "price": "399,00 ",
+      "status": 121
+    },
+    {
+     
+      "name": "DENIM OVERSHIRT WITH PATCH POCKETS",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/6147/037/406/2/w/939/6147037406_2_6_1.jpg?ts=1677660726298",
+      "category": "women-jackets",
+      "price": "179,00 ",
+      "status": 122
+    },
+    {
+  
+      "name": "DENIM JACKET WITH BELT",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/2379/544/805/2/w/465/2379544805_2_1_1.jpg?ts=1679059489130",
+      "category": "women-jackets",
+      "price": "199,00 ",
+      "status": 122
+    },
+    {
+     
+      "name": "LINEN BLEND BOMBER JACKET WITH POCKETS",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/2010/713/251/2/w/939/2010713251_2_1_1.jpg?ts=1683641835548",
+      "category": "women-jackets",
+      "price": "199,00 ",
+      "status": 123
+    },
+    {
+     
+      "name": "FAUX LEATHER JACKET",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/4341/826/822/2/w/939/4341826822_15_2_1.jpg?ts=1674127407453",
+      "category": "women-jackets",
+      "price": "259,00 ",
+      "status": 124
+    },
+    {
+     
+      "name": "LINEN WAISTCOAT WITH TAB",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/4877/082/756/2/w/939/4877082756_2_3_1.jpg?ts=1683103463182",
+      "category": "women-gilets",
+      "price": "149,00 ",
+      "status": 125
+    },
+    {
+   
+      "name": "LINEN WAISTCOAT WITH TAB",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/4877/082/055/2/w/939/4877082055_2_1_1.jpg?ts=1684139401543",
+      "category": "women-gilets",
+      "price": "149,00 ",
+      "status": 126
+    },
+    {
+    
+      "name": "WOOL BLEND SHORT WAISTCOAT",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/2400/408/800/2/w/939/2400408800_2_4_1.jpg?ts=1674657141641",
+      "category": "women-gilets",
+      "price": "259,00 ",
+      "status": 127
+    },
+    {
+     
+      "name": "TAILORED LINEN BLEND WAISTCOAT",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/5427/731/251/2/w/939/5427731251_1_1_1.jpg?ts=1679658624914",
+      "category": "women-gilets",
+      "price": "129,00 ",
+      "status": 128
+    },
+    {
+  
+      "name": "TAILORED LINEN BLEND WAISTCOAT",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/3102/939/544/2/w/939/3102939544_9_3_1.jpg?ts=1680012651839",
+      "category": "women-gilets",
+      "price": "129,00 ",
+      "status": 128
+    },
+    {
+     
+      "name": "TAILORED LINEN BLEND WAISTCOAT",
+      "image": "https://static.zara.net/photos///2023/V/0/1/p/5427/731/251/17/w/939/5427731251_1_1_1.jpg?ts=1683124378999",
+      "category": "women-gilets",
+      "price": "129,00 ",
+      "status": 128
+    },
+    {
+   
+      "name": "",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/5350/681/251/302/w/889/5350681251_15_1_1.jpg?ts=1683814411792",
+      "category": "kids-trueNeutralNew",
+      "price": "",
+      "status": 129
+    },
+    {
+      
+      "name": "",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/6917/802/305/302/w/939/6917802305_15_1_1.jpg?ts=1683456858716",
+      "category": "kids-trueNeutralNew",
+      "price": "",
+      "status": 130
+    },
+    {
+     
+      "name": "",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/6917/901/407/302/w/889/6917901407_15_1_1.jpg?ts=1683626877715",
+      "category": "kids-trueNeutralNew",
+      "price": "",
+      "status": 131
+    },
+    {
+   
+      "name": "DIP-DYE T-SHIRT",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/2795/605/902/2/w/477/2795605902_6_1_1.jpg?ts=1681212287708",
+      "category": "kids-girl",
+      "price": "39,90",
+      "status": 131
+    },
+    {
+     
+      "name": "TEXTURED DRESS WITH PASSEMENTERIE AND RUFFLES",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/6462/604/250/2/w/750/6462604250_6_1_1.jpg?ts=1680018461327",
+      "category": "kids-girl",
+      "price": "89,90",
+      "status": 133
+    },
+    {
+  
+      "name": "VARSITY T-SHIRT WITH SLOGAN",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/3037/618/406/2/w/750/3037618406_6_1_1.jpg?ts=1681377077974",
+      "category": "kids-girl",
+      "price": "29,90",
+      "status": 134
+    },
+    {
+    
+      "name": "PLUSH BERMUDA SHORTS WITH LABEL DETAIL",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/5048/610/620/2/w/477/5048610620_6_1_1.jpg?ts=1679403780432",
+      "category": "kids-girl",
+      "price": "29,90",
+      "status": 134
+    },
+    {
+   
+      "name": "PLUSH BERMUDA SHORTS WITH LABEL DETAIL",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/5048/610/620/2/w/477/5048610620_6_1_1.jpg?ts=1679403780432",
+      "category": "kids-girl",
+      "price": "29,90",
+      "status": 134
+    },
+    {
+     
+      "name": "TRUE NEUTRALS KNIT CARDIGAN",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/6216/703/500/2/w/750/6216703500_6_1_1.jpg?ts=1681715520265",
+      "category": "kids-trueNeutralNew",
+      "price": "89,90 ",
+      "status": 135
+    },
+    {
+    
+      "name": "TRUE NEUTRALS CONTRAST CARGO BERMUDA SHORTS",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/6917/904/513/2/w/750/6917904513_6_1_1.jpg?ts=1681978820220",
+      "category": "kids-trueNeutralNew",
+      "price": "99,90 ",
+      "status": 136
+    },
+    {
+   
+      "name": "TRUE NEUTRALS LINEN BLEND T-SHIRT",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/5350/679/807/2/w/750/5350679807_6_1_1.jpg?ts=1681742676247",
+      "category": "kids-trueNeutralNew",
+      "price": "59,90 ",
+      "status": 137
+    },
+    {
+    
+      "name": "TRUE NEUTRALS WORKER OVERSHIRT",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/6917/800/400/2/w/750/6917800400_6_1_1.jpg?ts=1681715521486",
+      "category": "kids-trueNeutralNew",
+      "price": "119,00",
+      "status": 138
+    },
+    {
+     
+      "name": "STRIPED T-SHIRT",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/1716/665/044/2/w/450/1716665044_6_1_1.jpg?ts=1682070037643",
+      "category": "kids-boy",
+      "price": "29,90",
+      "status": 139
+    },
+    {
+     
+      "name": "TIE-DYE SURF T-SHIRT",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/4805/667/080/2/w/398/4805667080_6_1_1.jpg?ts=1680077919596",
+      "category": "kids-boy",
+      "price": "45,90",
+      "status": 140
+    },
+    {
+     
+      "name": "T-SHIRT AND BERMUDA SHORTS SET",
+      "image": "https://static.zara.net/photos///2023/V/0/3/p/0039/685/423/2/w/398/0039685423_6_1_1.jpg?ts=1681212244334",
+      "category": "kids-boy",
+      "price": "69,90",
+      "status": 141
+    }
+  ]
