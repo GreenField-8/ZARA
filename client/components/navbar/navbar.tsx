@@ -12,17 +12,64 @@ const Navbar: React.FC = () => {
   const [menSubMenuOpen, setMenSubMenuOpen] = useState(false);
   const [kidsSubMenuOpen, setKidsSubMenuOpen] = useState(false);
 
-
+//men
   const handleNewMen = () => {
     router.push('/men')
   }
 
+  const handleZaraAthleticClick = () => {
+    router.push('/men-athleticz');
+  };
+
+  const handleLinenClick = () => {
+    router.push('/men-linen');
+  };
+
+  const handleCrochetClick = () => {
+    router.push('/men-crochet');
+  };
+
+
+
+
+//women
   const handleNewWomen = () => {
     router.push('/women')
   }
+
+  const handleBlazersClick = () => {
+    router.push('/women-blazers')
+  }
+
+  const handleJacketsClick = () => {
+    router.push('/women-jackets')
+  }
+
+
+  const  handlegiletsClick = () => {
+    router.push('/women-gilets')
+  }
+ 
+
+  
+//kids  
   const handleNewKids = () => {
     router.push('/kids')
   }
+ 
+  const  handleTrueNeutralsnewClick = () => {
+    router.push('/kids-trueNeutralNew')
+  }
+
+  const  handleGirlClick = () => {
+    router.push('/kids-girl')
+  }
+
+  const  handleBoyClick = () => {
+    router.push('/kids-boy')
+  }
+
+
 
   const handleLogoClick = () => {
     router.push('/');
@@ -43,9 +90,19 @@ const Navbar: React.FC = () => {
   const handleCartClick = () => {
     router.push('/cart');
   };
+
+
   const handleMenClick = () => {
-    setMenSubMenuOpen(!menSubMenuOpen);
+    if (menSubMenuOpen) {
+      setMenSubMenuOpen(false);
+    } else {
+      setMenSubMenuOpen(true);
+      setWomenSubMenuOpen(false);
+      setKidsSubMenuOpen(false);
+    }
   };
+
+  
   const handleWomenClick = () => {
     setWomenSubMenuOpen(!womenSubMenuOpen);
   };
@@ -113,9 +170,9 @@ const Navbar: React.FC = () => {
             {menSubMenuOpen && (
               <div className={styles['navbar-submenu']}>
                 <Text className={styles['navbar-submenu-item']} onClick={handleNewMen}>NEW</Text>
-                <Text className={styles['navbar-submenu-item']}>ZARA ATHLETICZ</Text>
-                <Text className={styles['navbar-submenu-item']}>LINEN</Text>
-                <Text className={styles['navbar-submenu-item']}>CROCHET</Text>
+                <Text className={styles['navbar-submenu-item']} onClick={handleZaraAthleticClick}>ZARA ATHLETICZ</Text>
+                <Text className={styles['navbar-submenu-item']} onClick={handleLinenClick}>LINEN</Text>
+                <Text className={styles['navbar-submenu-item']} onClick={handleCrochetClick}>CROCHET</Text>
                 <Text className={styles['navbar-submenu-item']}>BASICS</Text>
                 <Text className={styles['navbar-submenu-item']}>SUITS</Text>
                 <Text className={styles['navbar-submenu-item']}>SHIRTS</Text>
@@ -148,9 +205,9 @@ const Navbar: React.FC = () => {
             {womenSubMenuOpen && (
               <div className={styles['navbar-submenu']}>
                 <Text className={styles['navbar-submenu-item']} onClick={handleNewWomen}>NEW</Text>
-                <Text className={styles['navbar-submenu-item']}>BLAZERS</Text>
-                <Text className={styles['navbar-submenu-item']}>JACKETS | TRENCH COATS</Text>
-                <Text className={styles['navbar-submenu-item']}>WAISTCOATS | GILETS</Text>
+                <Text className={styles['navbar-submenu-item']} onClick={handleBlazersClick}>BLAZERS</Text>
+                <Text className={styles['navbar-submenu-item']} onClick={handleJacketsClick}>JACKETS | TRENCH COATS</Text>
+                <Text className={styles['navbar-submenu-item']} onClick={handlegiletsClick}>WAISTCOATS | GILETS</Text>
                 <Text className={styles['navbar-submenu-item']}>DRESSES | JUMPSUITS</Text>
                 <Text className={styles['navbar-submenu-item']}>SHIRTS</Text>
                 <Text className={styles['navbar-submenu-item']}>T-SHIRTS | SWEATSHIRTS</Text>
@@ -185,9 +242,9 @@ const Navbar: React.FC = () => {
       {kidsSubMenuOpen && (
         <div className={styles['navbar-submenu']}>
           <Text className={styles['navbar-submenu-item']} onClick={handleNewKids}>SUMMER CAMPNEW</Text>
-          <Text className={styles['navbar-submenu-item']}>TRUE NEUTRALSNEW</Text>
-          <Text className={styles['navbar-submenu-item']}>GIRL | 6-14 YEARS</Text>
-          <Text className={styles['navbar-submenu-item']}>BOY | 6-14 YEARS</Text>
+          <Text className={styles['navbar-submenu-item']} onClick={handleTrueNeutralsnewClick}>TRUE NEUTRALSNEW</Text>
+          <Text className={styles['navbar-submenu-item']} onClick={handleGirlClick}>GIRL | 6-14 YEARS</Text>
+          <Text className={styles['navbar-submenu-item']} onClick={handleBoyClick}>BOY | 6-14 YEARS</Text>
           <Text className={styles['navbar-submenu-item']}>BABY GIRL | 9 MONTHS - 6 YEARS</Text>
           <Text className={styles['navbar-submenu-item']}>BABY BOY | 9 MONTHS - 6 YEARS</Text>
           <Text className={styles['navbar-submenu-item']}>ACCESSORIES | SHOES</Text>

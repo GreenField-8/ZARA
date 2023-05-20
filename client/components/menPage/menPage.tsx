@@ -44,7 +44,7 @@ const ProductsByCategory = () => {
               <div className="post-name" onClick={() => handlePostClick(post.id)}>
                 {post.name}
               </div>
-              <div className="post-price">${post.price}</div>
+              <div className="post-price">{post.price}TND</div>
             </div>
           </div>
         ))}
