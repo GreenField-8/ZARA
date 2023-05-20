@@ -1,6 +1,6 @@
 import express, { Router } from "express";
 import { AuthenticatedUser, Login, Logout, Refresh, Register } from "./controller/auth.controller";
-import { createProduct, getAllProducts, getProductById, getProductsByCategory , getProductsByName } from './controller/product.controller'
+import { createProduct, getAllProducts, getProductById, getProductsByCategory , getProductsByName , deleteProduct , updateProduct } from './controller/product.controller'
 // import { addToCart, showMyCart } from "./controller/cart.controller";
 
  const router: Router = express.Router()
@@ -17,6 +17,8 @@ import { createProduct, getAllProducts, getProductById, getProductsByCategory , 
     router.post('/addProd', createProduct);
     // router.post('/addToCart', addToCart);
     // router.get('/showMyCart', showMyCart);
+    router.delete('/deleteProd/:id', deleteProduct);
+    router.put('/updateProd/:id', updateProduct);
     
 
 

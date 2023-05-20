@@ -31,7 +31,6 @@
   height: 23px;
 }
 
-
 .navbar-login-text {
   font-size: 12px;
   cursor: pointer;
@@ -55,7 +54,7 @@
   cursor: pointer;
   color: #393838;
   font-size: 20px;
-  margin-top:15px;
+  margin-top: 15px;
   margin-left: 20px;
 }
 
@@ -75,4 +74,14 @@
   margin-right: 10px;
   cursor: pointer;
   font-family: 'Neue Helvetica', sans-serif;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.navbar-submenu-item {
+  font-size: 11px;
+  font-family: 'Neue Helvetica', sans-serif;
+  cursor: pointer;
 }

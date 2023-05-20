@@ -65,4 +65,42 @@ export const getProductsByCategory = async (req: Request, res: Response) => {
     }
   };
   
+  export const deleteProduct = async (req: Request, res: Response) => {
+    try {
+      const { id } = req.params;
+      const product = await getRepository(Product).delete(id);
   
+      if (product.affected === 0) {
+        res.status(404).send('Product not found');
+      } else {
+        res.send('Product deleted successfully');
+      }
+    } catch (error) {
+      res.status(500).send('Error deleting product');
+    }
+  };
+  
+  export const updateProduct = async (req: Request, res: Response) => {
+    const { id } = req.params;
+    const { name, image, category, price, status } = req.body;
+    
+    try {
+      const product = await getRepository(Product).findOne({where: {id: parseInt(req.params.id, 10)}});
+  
+      if (!product) {
+        res.status(404).send('Product not found');
+        return;
+      }
+  
+      product.name = name;
+      product.image = image;
+      product.category = category;
+      product.price = price;
+      product.status = status;
+  
+      const updatedProduct = await getRepository(Product).save(product);
+      res.send(updatedProduct);
+    } catch (error) {
+      res.status(500).send('Error updating product');
+    }
+  };
