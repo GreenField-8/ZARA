@@ -1,0 +1,49 @@
+
+.container {
+    margin-top: 20px;
+    font-family: "Neue Helvetica", Arial, sans-serif;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px;
+    text-align: left;
+    font-family: "Neue Helvetica", Arial, sans-serif;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+  }
+  
+  .table td {
+    border-right: 1px solid #ccc;
+  }
+  
+  .table td:last-child,
+  .table th:last-child {
+    border-right: none;
+  }
+  
+  .table td button {
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .table td button.edit {
+    background-color: green;
+    color: white;
+  }
+  
+  .table td button.delete {
+    background-color: red;
+    color: white;
+  }
+  
