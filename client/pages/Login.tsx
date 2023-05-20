@@ -10,13 +10,18 @@ const Login: React.FC = () => {
 
   const handleLogin = async () => {
     try {
+      if (email.trim() === '' || password.trim() === '') {
+        console.error('Email or password cannot be empty.');
+        return;
+      }
+
       const response = await axios.post('http://localhost:7000/api/login', {
         email,
         password,
       });
       console.log(response.data);
     } catch (error: any) {
-      console.error(error.response.data);
+      console.error(error);
     }
   };
 
@@ -27,7 +32,6 @@ const Login: React.FC = () => {
   const handleRegisterClick = () => {
     handleLoginClick();
   };
-
   return (
     <>
       <Navbar />
