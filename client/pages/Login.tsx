@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import Navbar from '@/components/navbar/navbar';
@@ -8,7 +8,9 @@ const Login: React.FC = () => {
   const [password, setPassword] = useState('');
   const router = useRouter();
 
-  const handleLogin = async () => {
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+
     try {
       if (email.trim() === '' || password.trim() === '') {
         console.error('Email or password cannot be empty.');
@@ -20,6 +22,13 @@ const Login: React.FC = () => {
         password,
       });
       console.log(response.data);
+      const loginSuccess = true; 
+
+      if (loginSuccess) {
+        router.push('/'); 
+      } else {
+        console.error('Login failed.'); 
+      }
     } catch (error: any) {
       console.error(error);
     }
@@ -68,6 +77,7 @@ const Login: React.FC = () => {
             </h3>
             <form
               id="form"
+              onSubmit={handleLogin} 
               style={{
                 width: '100%',
               }}

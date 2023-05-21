@@ -8,6 +8,7 @@ interface Post {
   name: string;
   image: string;
   price: number;
+  description: string; 
 }
 
 const ProductsByCategory = () => {
@@ -28,8 +29,17 @@ const ProductsByCategory = () => {
     fetchPosts();
   }, []);
 
-  const handlePostClick = (postId: number) => {
-    router.push(`/postdetails/${postId}`);
+  const handlePostClick = (post: Post) => {
+    router.push({
+      pathname: '/postDetailsPage',
+      query: {
+        id: post.id,
+        name: post.name,
+        image: post.image,
+        price: post.price,
+        description: post.description,
+      },
+    });
   };
 
   return (
@@ -38,12 +48,14 @@ const ProductsByCategory = () => {
 
       <div className="list-container">
         {posts.map((post) => (
-          <div key={post.id} className="post-item">
-            <img src={post.image} alt={post.name} onClick={() => handlePostClick(post.id)} />
+          <div
+            key={post.id}
+            className="post-item"
+            onClick={() => handlePostClick(post)}
+          >
+            <img src={post.image} alt={post.name} />
             <div className="post-info">
-              <div className="post-name" onClick={() => handlePostClick(post.id)}>
-                {post.name}
-              </div>
+              <div className="post-name">{post.name}</div>
               <div className="post-price">{post.price}TND</div>
             </div>
           </div>
@@ -62,7 +74,13 @@ const ProductsByCategory = () => {
           margin-top: 50px; /* Adjust the margin value as needed */
         }
 
-      
+        .post-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 20px;
+          cursor: pointer;
+        }
 
         .post-info {
           display: flex;
@@ -74,16 +92,12 @@ const ProductsByCategory = () => {
 
         .post-name {
           font-family: 'Neue Helvetica', Arial, sans-serif;
-          cursor: pointer;
           font-size: 10px;
-          position: unset
-        
         }
 
         .post-price {
           font-family: 'Neue Helvetica', Arial, sans-serif;
           font-size: 10px;
-          position: unset
         }
       `}</style>
     </div>
