@@ -5,6 +5,7 @@ interface Product {
   id: number;
   name: string;
   image: string;
+  description: string;
   category: string;
   price: number;
   status: string;
@@ -24,6 +25,7 @@ const ProductTable: React.FC<ProductTableProps> = ({ products, onEdit, onDelete 
           <tr>
             <th>Name</th>
             <th>Image</th>
+            <th>Description</th>
             <th>Category</th>
             <th>Price</th>
             <th>Status</th>
@@ -36,6 +38,7 @@ const ProductTable: React.FC<ProductTableProps> = ({ products, onEdit, onDelete 
             <tr key={product.id}>
               <td>{product.name}</td>
               <td>{product.image}</td>
+              <td>{product.description}</td>
               <td>{product.category}</td>
               <td>{product.price}</td>
               <td>{product.status}</td>

@@ -4,11 +4,12 @@ import { Product } from "../model/product.model";
 
 
 export const createProduct = async (req: Request, res: Response) => {
-    const { name, image, category, price, status } = req.body;
+    const { name, image, description, category, price, status } = req.body;
 
     const type = await getRepository(Product).insert({
         name,
         image,
+        description,
         category,
         price,
         status
@@ -82,7 +83,7 @@ export const getProductsByCategory = async (req: Request, res: Response) => {
   
   export const updateProduct = async (req: Request, res: Response) => {
     const { id } = req.params;
-    const { name, image, category, price, status } = req.body;
+    const { name, image, description, category, price, status } = req.body;
     
     try {
       const product = await getRepository(Product).findOne({where: {id: parseInt(req.params.id, 10)}});
@@ -94,6 +95,7 @@ export const getProductsByCategory = async (req: Request, res: Response) => {
   
       product.name = name;
       product.image = image;
+      product.description = description;
       product.category = category;
       product.price = price;
       product.status = status;
