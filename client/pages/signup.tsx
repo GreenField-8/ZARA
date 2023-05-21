@@ -11,7 +11,9 @@ const Sign_Up: React.FC = () => {
 
   const router = useRouter();
 
-  const handleRegister = async () => {
+  const handleRegister = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); 
+  
     try {
       const response = await axios.post('http://localhost:7000/api/register', {
         name,
@@ -19,7 +21,7 @@ const Sign_Up: React.FC = () => {
         password,
       });
       console.log(response.data);
-      router.push('/login');
+      router.push('/Login'); 
     } catch (error: any) {
       console.error(error);
       setError(error.response.data.message);
@@ -131,6 +133,7 @@ const Sign_Up: React.FC = () => {
                 <button
                   id="authb"
                   className="auth-btn"
+                  type="submit"
                   onClick={handleRegister}
                   style={{
                     width: '19em',
