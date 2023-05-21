@@ -7,6 +7,7 @@ interface Product {
   id: number;
   name: string;
   image: string;
+  description: string;
   category: string;
   price: number;
   status: string;
@@ -18,6 +19,7 @@ const ProductManagement = () => {
     id: 0,
     name: '',
     image: '',
+    description: '',
     category: '',
     price: 0,
     status: ''
@@ -116,6 +118,10 @@ const ProductManagement = () => {
           <input type="text" name="image" value={newProduct.image} onChange={handleInputChange} />
         </div>
         <div>
+          <label>Description:</label>
+          <input type="text" name="description" value={newProduct.description} onChange={handleInputChange} />
+        </div>
+        <div>
           <label>Category:</label>
           <input
             type="text"
@@ -153,6 +159,15 @@ const ProductManagement = () => {
             <input
               type="text"
               name="image"
+              value={editedProduct.image}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div>
+            <label>Description</label>
+            <input
+              type="text"
+              name="description"
               value={editedProduct.image}
               onChange={handleInputChange}
             />

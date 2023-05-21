@@ -10,6 +10,8 @@ export class Product {
   
   @Column()
   image!: string;
+  @Column()
+  description!: string;
 
   @Column()
   category!: string;
