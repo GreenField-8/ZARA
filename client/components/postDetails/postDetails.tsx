@@ -31,13 +31,29 @@ const PostDetails: React.FC = () => {
       <div className="product-details">
         <h2>{name}</h2>
         <p> {price} TND</p>
-        <p>Description: {description}</p>
+        <p>{description}</p>
         <ul>
           {sizes.map((size) => (
             <li key={size}>{size}</li>
           ))}
         </ul>
-        <button>Add to Bag</button>
+        <button
+                onClick={()=>{}}
+                style={{
+                  width: '13em',
+                  height: '2.7em',
+                  backgroundColor: 'white',
+                  color: 'black',
+                  marginTop: '13px',
+                  cursor: 'pointer',
+                  outline: 'none',
+                  border: '1px solid black',
+                  fontFamily: 'Neue Helvetica, Arial, Helvetica, sans-serif',
+                  fontSize: '15px',
+                }}
+              >
+                Add to bag
+              </button>
       </div>
 
       <style jsx>{`
